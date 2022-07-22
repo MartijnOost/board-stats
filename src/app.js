@@ -23,6 +23,7 @@ async function getItems(type) {
       default:
         itemColor = element.style.fillColor;
     }
+
     itemCount[itemColor] = (itemCount[itemColor] || 0) + 1;
     
     if (!colorIds[itemColor]) {
@@ -52,13 +53,18 @@ function refresh(){
   getItems('frame')
   getItems('preview')
   getItems('card')
-
 }
 
 function addRow(idsIterator, type, qty, color) {
   const row = document.createElement("div");
   row.classList.add("row");
-  row.style.color = color;
+  let colorStyle = color
+  console.log(color)
+  if (color == 'transparent' || color == '#ffffff'){
+    colorStyle = "#000000"
+  }
+  row.style.color = colorStyle;
+
   if (color){
     color = " (" + color + ")"
   }

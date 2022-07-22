@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollable-container {
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 30px;
+  padding-left: 23px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  font-family: Formular, Arial, sans-serif;
+  font-size: 16px;
+
+}
+
+.scrollable-content {
+  height: 2000px;
+  background-color: #2a79ff;
+}
+
+.refresh-button {
+  display: block;
+  background-color: #4262ff;
+  border: none;
+  color: #fff;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  width: 274px;
+}
+
+.find-button {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-right: 20px;
+  height: 30px;
+  background: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.row-input:hover,
+.row-input:active,
+.delete-button:hover,
+.delete-button:active {
+  border: 1px solid #666;
+}
+
+.row {
+  margin-bottom: 20px;
+}

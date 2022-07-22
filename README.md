@@ -39,8 +39,7 @@
 
 ### About the app
 
-This sample app shows how you can create a template programmatically using the Miro Web SDK. \
-It demonstrates how to work with shape and text items on the board.
+This app gathers supported item types and displays their numbers using the Miro Web SDK.
 
 This app uses [Vite](https://vitejs.dev/). \
 If you want to modify the `vite.config.js` configuration, see the [Vite documentation](https://vitejs.dev/guide/).

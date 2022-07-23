@@ -59,7 +59,6 @@ function addRow(idsIterator, type, qty, color) {
   const row = document.createElement("div");
   row.classList.add("row");
   let colorStyle = color
-  console.log(color)
   if (color == 'transparent' || color == '#ffffff'){
     colorStyle = "#000000"
   }

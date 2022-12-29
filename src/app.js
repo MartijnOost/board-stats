@@ -113,6 +113,8 @@ function addProperties(row){
 }
 
 function addRow(idsIterator, type, qty, color) {
+  var colorString = color;
+  var typeString = type;
   const row = document.createElement("div");
   row.classList.add("row");
   let colorStyle = color
@@ -122,10 +124,10 @@ function addRow(idsIterator, type, qty, color) {
   row.style.color = colorStyle;
 
   if (color){
-    var colorString = " (" + color + ")"
+    colorString = " (" + color + ")"
   }
   if (qty > 1){
-    var typeString = type + "s"
+    typeString = type + "s"
   }
   row.textContent = qty + ' ' + typeString + ' ' + colorString;
   rowsContainer.appendChild(row);

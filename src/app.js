@@ -6,7 +6,7 @@ function skipColor(type, color) {
 }
 
 async function getItems(type) {
-  let items = await board.get({
+  let items = await board.getSelection({
     type: [type]
   });
 
@@ -129,7 +129,8 @@ function addRow(idsIterator, type, qty, color) {
   if (qty > 1){
     typeString = type + "s"
   }
-  row.textContent = qty + ' ' + typeString + ' ' + colorString;
+  //row.textContent = qty + ' ' + typeString + ' ' + colorString;
+  row.textContent = qty + ' ' + typeString;
   rowsContainer.appendChild(row);
 
   // Create find button
